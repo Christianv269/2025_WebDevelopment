@@ -22,4 +22,4 @@ li{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 /* Chalenge 6: Change the background color of the div to blue, color of the text to white and the weight of the font to bold. 
 
 Hint:  You can specify several CSS rules for one element by separating the rules with commas.  Look at some example on w3schools */
-div{background-color: blue; color: white;font-weight;bold;}
+div{background-color: blue; color: white;font-weight: bold;}
