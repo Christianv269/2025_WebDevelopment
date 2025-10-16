@@ -22,7 +22,7 @@ all elements with a class of "special"
 */
 .special{
   text-align: center;
-  text-shadow: 2px yellow;
+  text-shadow: 2px 2px yellow;
 }
 /* Challenge Bonus: Create a CSS rule for a class named "shadow".  
 Apply a shadow to the box around the elements that is 2px 2px  gray. */ 
