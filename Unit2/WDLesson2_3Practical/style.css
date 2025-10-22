@@ -23,8 +23,9 @@ img{
   text-align: center;
 }
 /* Challenge 8: Change the height of all images with a class of "logo" to 200px*/
-#logo{
+.logo{
   height: 200px;
+}
 /* Challenge 9: Change the padding to 40px for all divs */
 div{
   padding: 40px;
@@ -38,8 +39,8 @@ div{
 
 #main_container{
   font-size: 24pt;
-  font-family:Arial, Helvetica, sans-serif;
-  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(0, 0, 255)
   color: white;
 }
 
