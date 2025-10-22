@@ -19,7 +19,7 @@ img{
   background-image: linear-gradient(blue white);
 }
 /* Challenge 7: For the HTML element with an id of "logo_container" align the text in the center */
-.logoContainer{
+#logoContainer{
   text-align: center;
 }
 /* Challenge 8: Change the height of all images with a class of "logo" to 200px*/
@@ -38,7 +38,7 @@ div{
 
 #main_container{
   font-size: 24pt;
-  font-family:Arial,Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   background-color: green;
   color: white;
 }
