@@ -16,7 +16,7 @@ img{
   height: 10px;
   border: 0px solid;
   border-color: white;
-  background-image: linear-gradient(blue, white);
+  background-image: linear-gradient(right, blue, white);
 }
 /* Challenge 7: For the HTML element with an id of "logo_container" align the text in the center */
 #logoContainer{
