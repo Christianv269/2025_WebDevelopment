@@ -1,13 +1,13 @@
 /* Challenge 8: Change the type of font to Arial for all elements */
-
+html{font-family: Arial, Helvetic, sans serif;}
 /* Challenge 9: Change the background color for all elements with a class of banner.  Choose a color
                 using rgb( )
 */
-
+.banner{background-color: rgb(206, 146, 17);}
 /* Challenge 10: Change the background color for all elements with a class of subbanner.  Choose a color
                 using a hexdecimal value. 
 */
-
+.subbaner{background-color: rgb(224, 110, 88);}
 /* Challenge 11: Change the radius of the border to 6px and height to 200px for all images inside of all 
                  elements with a class of gallery 
 */
