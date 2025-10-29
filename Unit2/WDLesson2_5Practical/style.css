@@ -3,7 +3,7 @@ html{font-family: Arial, Helvetic, sans serif;}
 /* Challenge 9: Change the background color for all elements with a class of banner.  Choose a color
                 using rgb( )
 */
-.banner{background-color: rgb(206, 146, 17);}
+.banner{background-color: rgb(153, 153, 153);}
 /* Challenge 10: Change the background color for all elements with a class of subbanner.  Choose a color
                 using a hexdecimal value. 
 */
@@ -17,13 +17,32 @@ html{font-family: Arial, Helvetic, sans serif;}
                  apply some type of styling using the filter( ) effect
 */
 #firstGallery{
-  filter: grayscale (100%)
+  box-shadow: 5px 5px 5px black;
+  filter: grayscale(100%);
+  margin:10px;
+}
+#firstGallery:hover{
+  box-shadow: 5px 5px 5px gray;
+  filter: grayscale(0%);
+  height:250px;
+}
 }
 /* Challenge 13: When the visitor moves their mouse over images inside of the element with an id of secondGallery,
                  apply some other type of styling.
 */
 #secondGallery{
-  img:hover:filter: grayscale(100)
+  box-shadow: 5px 5px 5px black;
+  filter: grayscale(100%);
+  margin:10px;
+}
+#secondGallery:hover{
+  box-shadow: 5px 5px 5px gray;
+  filter: grayscale(0%);
+  height:250px;
+}
+
+
+
 /* Challenge 14: Change the transition for all elements to 1 second */
 *{
   transition:1s;
