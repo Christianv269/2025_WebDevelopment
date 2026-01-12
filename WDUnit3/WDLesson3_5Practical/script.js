@@ -4,7 +4,8 @@
       3) Display the results in the appropriate element
 */
 function recArea(){
-
+let width = document.getElementById("width");
+let height = document.getElementById("height");
 }
 
 function recPerimeter(){
