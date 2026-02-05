@@ -6,14 +6,19 @@ function name(){
   // Step 2: Complete the process
   //    a) Perform any calculations necessary
   //    b) Perform necessary decisions
-
+ 
   // Step 3: Display the output
 
 }
 */
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
-
+function name(){
+  let input1 = document.getElementById("input1").value;
+  let input2 = document.getElementById("input2").value;
+  let ouput = document.getElementById("output");
+  let result = Number(input1) + Number(input2);
+}
 
 
 /* Challenge 3:  Complete the function for Pets Challenge on pets.html.  
