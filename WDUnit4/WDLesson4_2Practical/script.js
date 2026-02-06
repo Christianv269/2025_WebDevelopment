@@ -13,11 +13,19 @@ function name(){
 */
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
-function name(){
+function area(){
   let input1 = document.getElementById("input1").value;
   let input2 = document.getElementById("input2").value;
   let ouput = document.getElementById("output");
-  let result = Number(input1) + Number(input2);
+  let msg = ""
+  if(1 < 0 || w <= 0){
+    msg = "Inappropiate measurement";
+
+  }else{
+
+    msg = `Area is $(a)`;
+  }
+  output.innerHTML = msg;
 }
 
 
@@ -26,5 +34,28 @@ function name(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
+  let animal = document.getElementById("animal").value;
+  let feeling = document.getElementById("emotion").value;
+  let output = document.getElementById("output");
+  let picture = ""
+  if(animal == "Bear" && feeling == "Sad"){
+    picture = "sadBear.jpg";
+  }
+  if(animal == "Bear" && feeling == "Funny"){
+      picture = "funnyBear.jpg";
+  }
+  if(animal == "Cat" && feeling == "Sad"){
+    src = "sadCat.jpg";
+  }
+  if(animal == "Cat" && feeling == "Funny"){
+      picture = "funnyCat.jpg";
+  }
+  if(animal == "Dog" && feeling == "Funny"){
+      picture = "funnyDog.jpg";
+  }
+  if(animal == "Dog" && feeling == "Sad"){
+      picture = "sadDog.jpg";
+  }
 
+ output.innerHTML = `${animal}${feeling};'ljkl;jk;lkj<img src='${animal}'>`
 }
