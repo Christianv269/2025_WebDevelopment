@@ -6,7 +6,14 @@
 */
 let correct;
 function generateProblem(){
-let s = document.getElementById("Problem")
+       let s = document.getElementById("problem");
+       let num1 = Math.floor(Math.random() * 10 + 1);
+       let num2 = Math.floor(Math.random() * 10 + 1);
+       correct = num1 + num2
+       let build = `${num1} + ${num2} =`
+       problem.innerHTML = build;
+
+
 
 }
 
@@ -21,9 +28,11 @@ let s = document.getElementById("Problem")
        4) Display msg in the output
 */
 function checkProblem(){
+       if(problem ){
+              msg = "Correct!";
 
 }
-
+}
 /* Challenge Bonus: Could you randomize the operations so it is not only addition.  
 Hint: Generate a random number to decide whether the problem is an addition, substraction, multiplication or division problem.
 */
