@@ -28,10 +28,17 @@ function generateProblem(){
        4) Display msg in the output
 */
 function checkProblem(){
-       if(problem ){
-              msg = "Correct!";
+       let response = parseInt(document.getElementById("response").value);
+       let output = document.getElementById("output");
 
-}
+       let build ="";
+       if(response == correct ){
+              build = "<img src = correct.webp>"
+       }else{
+              build = "<img src = incorrect.avif>"
+       }
+       output.innerHTML = build;
+
 }
 /* Challenge Bonus: Could you randomize the operations so it is not only addition.  
 Hint: Generate a random number to decide whether the problem is an addition, substraction, multiplication or division problem.
