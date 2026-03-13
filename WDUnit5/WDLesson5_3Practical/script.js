@@ -11,6 +11,7 @@
 */
 
 function balance(){
+        let output = document.getElementById("Output");
 
 
 }
