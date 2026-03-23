@@ -24,7 +24,7 @@ function init(){
   for(let i = 0; i < meats.length; i += 1){
     build += `<div>`;
     build += `     <h2>${ meat_titles[i] }</h2>`;
-    build += `     <img src ="images/${meats[i]}>`;
+    build += `     <img src ="images/${meats[i]}>"`;
     build += `      <span>${meat_prices[i]}</span>`;
     build += `</div>`;
   }
@@ -33,7 +33,7 @@ function init(){
   for(let i = 0; i < seafood.length; i += 1){
     build += `<div>`;
     build += `     <h2>${ seafood_titles[i] }</h2>`;
-    build += `     <img src ="images/${seafood[i]}>`;
+    build += `     <img src ="images/${seafood[i]}">`;
     build += `      <span>${seafood_prices[i]}</span>`;
     build += `</div>`;
   }
@@ -42,7 +42,7 @@ function init(){
    for(let i = 0; i < dessert.length; i += 1){
     build += `<div>`;
     build += `     <h2>${ dessert_titles[i] }</h2>`;
-    build += `     <img src ="images/${dessert[i]}>`;
+    build += `     <img src ="images/${dessert[i]}">`;
     build += `      <span>${dessert_prices[i]}</span>`;
     build += `</div>`;
   }
