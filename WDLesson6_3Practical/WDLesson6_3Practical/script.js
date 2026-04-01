@@ -37,19 +37,29 @@ let dessert = [
 ];
 
 
-function meats(){
-  let title = document.querySelector("#title");
-  let output = document.querySelector("#output");
+function DisplayMeats(){
+  let title = document.getElementById("#title");
+  let output = document.getElementById("#items");
   let build = ``;
   /* Challenge 7
      1) Using the array of JSON from Challenge 4, produce cards for all the items.  
      2) Change the title to "Meats".
   */
+ for(let i = 0; i <meats.length; i += 1){
+  let m = meats[i];
+  build += `<div class = "card">
+                 <h2>${m.title}</h2>
+                <img src = "images/${m.image}">
+                <p>${m.price}</p>
+                </div>
+`
+
+ }
 
   output.innerHTML = build;
 }
 
-function seafood(){
+function DisplaySeafood(){
   let title = document.querySelector("#title");
   let output = document.querySelector("#output");
   let build = ``;
