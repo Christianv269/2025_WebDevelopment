@@ -12,7 +12,7 @@ html,body{
 }
 
 nav{
-  background-color:rgb(237, 100, 100);
+  background-color:rgb(164, 100, 237);
 }
 nav a{
   color:black;
@@ -25,14 +25,14 @@ nav a:hover{
   color:white;
 }
 .subbanner{
-  background-color:rgb(237, 100, 100);
+  background-color:rgb(164, 100, 237);
 }
 #banner{
-  background-color:rgb(255, 0, 0);
+  background-color:rgb(162, 0, 255);
   color:white;
 }
 #footer{
-  background-color:rgb(237, 100, 100);
+  background-color:rgb(164, 100, 237);
   color:white;
   /*position:fixed;*/
   left: 0;
@@ -52,21 +52,21 @@ nav a:hover{
 
 .highlight{
   font-style:italic;
-  color:rgb(255, 0, 0);
+  color:rgb(162, 0, 255);
 }
 .heading{
   font-weight:bold;
 }
 .button{
   text-decoration:none;
-  background-color:rgb(255, 0, 0);
+  background-color:rgb(162, 0, 255);
   color:white;
   border-radius:4px;
   padding:6px;
   box-shadow:2px 2px 2px black;
 }
 .button:hover{
-  background-color:rgb(237, 100, 100);
+  background-color:rgb(164, 100, 237);
 }
 #output{
   flex-wrap:wrap;
