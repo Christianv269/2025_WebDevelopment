@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> 6.7 Practical </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+   </head>
+  <body onload="init()">
+    <div id="banner" class="container center">
+      <div style="text-align:center">
+          <h1>NYC Open Data</h1>
+          <h2> Filtering  </h2>
+      </div>
+    </div>
+    <div class="container subbanner">
+      <div>
+       
+        <a class="button" href="home.html" target="_blank">Home Page</a> 
+        <a class="button" target="_blank" href="chart.html"
+">Chart</a>
+        <a class="button" target="_blank" href="filter.html">Filtering</a>
+       </div>
+    </div>
+    <div style="padding:20px">
+        <h3 style="display:inline;">Search By Borough</h3>
+        <input type="text" id="borough" placeholder="Enter Borough">
+        <a class="button" onclick="filterByBorough()"> Search </a>
+        <hr>
+    </div>
+    <div id="result" class="container">
+      
+    </div>
+    <div id="output" class="container">
+    </div>
+
+    <div id="footer" class="container center">
+      <h3> 6.7 Practical </h3>
+    </div>  
+  </body>
+</html>
