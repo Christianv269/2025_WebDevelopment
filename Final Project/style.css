@@ -25,7 +25,7 @@ nav a:hover{
   color:white;
 }
 .subbanner{
-  background-color:rgb(164, 100, 237);
+  background-color:rgb(70, 79, 158);
 }
 #banner{
   background-color:rgb(162, 0, 255);
@@ -59,7 +59,7 @@ nav a:hover{
 }
 .button{
   text-decoration:none;
-  background-color:rgb(162, 0, 255);
+  background-color:rgb(61, 54, 129);
   color:white;
   border-radius:4px;
   padding:6px;
@@ -102,7 +102,7 @@ nav a{
     color: white;
 }
 nav a{
-    background-color: crimson;
+    background-color: rgb(157, 20, 220);
 }
 #text div{
     font-size: 30px;
@@ -124,5 +124,5 @@ nav a:hover{
     transition: 0.5s;
 }
 #footer{
-    background-color: crimson;
+    background-color: rgb(231, 48, 255);
 }

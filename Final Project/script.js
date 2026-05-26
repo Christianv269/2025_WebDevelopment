@@ -1,5 +1,5 @@
 async function init(){
-  let link = "https://data.cityofnewyork.us/resource/h9gi-nx95.json"
+  let link = "https://data.cityofnewyork.us/resource/ssq6-fkht.json"
   info = await fetch(link);
   data = await info.json();
   
@@ -7,19 +7,17 @@ async function init(){
   let build = "";
  
  for(let i = 0; i < data.length; i += 1){
-  let collision = data[i];
+  let permit = data[i];
   build += `
               <div class = "fitted card">
-              <h2>${collision.crash_date}</h2>
-              <h2>${collision.crash_time}</h2>
-              <h2>${collision.borough}</h2>
-              <h2>${collision.zip_code}</h2>
-              <h2>${collision.collision_id}</h2>
-              <h2>${collision.cross_street_name}</h2>
-              <h2>${collision.on_street_name}</h2>
-              <h2>${collision.vehicle_type_code1}</h2>
-              <h2>${collision.vehicle_type_code2}</h2>
-              <h2>${collision.number_of_persons_killed}</h2>
+              <h2>${permit.acct_id}</h2>
+              <h2>${permit.owner_name}</h2>
+              <h2>${permit.last_visit_dt}</h2>
+              <h2>${permit.last_full_insp_dt}</h2>
+              <h2>${permit.last_insp_stat}</h2>
+              <h2>${permit.prem_addr}</h2>
+              <h2>${permit.number}</h2>
+              <h2>${permit.street}</h2>
               </div>
             
               `
@@ -43,20 +41,18 @@ function filterByBorough(){
       build += `<div class="fitted card">
                   <h3>${complaint.complaint_type}</h3>
                   <hr>
-                  <p>${complaint.crash_date}</p>
-                  <p>${complaint.crash_time}</p>
-                  <p>${complaint.borough}</p>
+                  <p>${complaint.acct_id}</p>
+                  <p>${complaint.owner_name}</p>
+                  <p>${complaint.last_visit_dt}</p>
                   <hr>
-                  <p>${complaint.zip_code}</p>
+                  <p>${complaint.last_full_insp_dt}</p>
                   <hr>
-                  <p>${complaint.collision_id}</p>
-                  <p>${complaint.cross_street_name}</p>
+                  <p>${complaint.last_insp_stat}</p>
+                  <p>${complaint.prem_addr}</p>
                   <hr>
-                  <p>${complaint.on_street_name}</p>
-                  <p>${complaint.vehicle_type_code1}</p>
+                  <p>${complaint.number}</p>
+                  <p>${complaint.street}</p>
                   <hr>
-                  <p>${complaint.vehicle_type_code2}</p>
-                  <p>${complaint.number_of_persons_killed}</p>
                 </div>`;
       ct += 1;
     }
