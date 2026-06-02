@@ -30,29 +30,26 @@ async function init(){
 
 function filterByBorough(){
   let output = document.getElementById("output");
-  let borough = document.getElementById("borough").value;
+  let street = document.getElementById("street").value;
   let result = document.getElementById("result");
   let build = "";
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
     let complaint = data[i];
-    if(complaint.borough == borough){
+    if(complaint.street == street){
       build += `<div class="fitted card">
-                  <h3>${complaint.complaint_type}</h3>
-                  <hr>
-                  <p>${complaint.acct_id}</p>
-                  <p>${complaint.owner_name}</p>
-                  <p>${complaint.last_visit_dt}</p>
-                  <hr>
-                  <p>${complaint.last_full_insp_dt}</p>
-                  <hr>
-                  <p>${complaint.last_insp_stat}</p>
-                  <p>${complaint.prem_addr}</p>
-                  <hr>
-                  <p>${complaint.number}</p>
-                  <p>${complaint.street}</p>
-                  <hr>
+                  <h2>${complaint.complaint_type}</h2>
+                  
+                  <h2><p>${complaint.acct_id}</p></h2>
+                  <h2><p>${complaint.owner_name}</p></h2>
+                  <h2><p>${complaint.last_visit_dt}</p></h2>
+                  <h2><p>${complaint.last_full_insp_dt}</p></h2>
+                  <h2><p>${complaint.last_insp_stat}</p></h2>
+                  <h2><p>${complaint.prem_addr}</p></h2>
+                  <h2><p>${complaint.number}</p></h2>
+                  <h2><p>${complaint.street}</p></h2>
+                  
                 </div>`;
       ct += 1;
     }
